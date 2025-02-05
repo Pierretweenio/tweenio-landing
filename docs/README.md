@@ -1,10 +1,4 @@
-2. Copy these project files into the repository:
-   - Copy the entire `docs/` directory
-   - Copy README.md (this file)
-
-3. Push the files:
-   ```bash
-   git add .
+git add .
    git commit -m "Initial landing page setup"
    git push origin main
    ```
