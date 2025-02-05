@@ -25,14 +25,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in').forEach((element) => {
     observer.observe(element);
 });
-
-// Add hover effect for social links
-document.querySelectorAll('.social-link').forEach(link => {
-    link.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.1)';
-    });
-    
-    link.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1)';
-    });
-});

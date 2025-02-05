@@ -1,7 +1,6 @@
 /* Base Styles */
 :root {
     --primary-color: #000000;
-    --accent-color: #00ff00;
     --text-color: #ffffff;
     --transition-speed: 0.3s;
 }
@@ -9,7 +8,7 @@
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -33,23 +32,20 @@ body {
     margin-bottom: 2rem;
 }
 
-.logo-icon {
-    font-size: 4rem;
-    color: var(--accent-color);
-}
-
-/* Typography */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.logo-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4.5rem;
     font-weight: 700;
+    color: var(--text-color);
     letter-spacing: 2px;
 }
 
+/* Typography */
 .tagline p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0.8;
+    font-weight: 300;
 }
 
 /* Coming Soon Section */
@@ -60,6 +56,7 @@ h1 {
 .coming-soon h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 /* Progress Bar */
@@ -75,7 +72,7 @@ h1 {
 .progress-fill {
     width: 0%;
     height: 100%;
-    background-color: var(--accent-color);
+    background-color: var(--text-color);
     animation: progress 2s ease-in-out infinite;
 }
 
@@ -92,7 +89,7 @@ h1 {
 }
 
 .social-link:hover {
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 /* Animations */
@@ -119,14 +116,16 @@ h1 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .logo-text {
+        font-size: 3.5rem;
+    }
+
+    .tagline p {
+        font-size: 1.2rem;
+    }
     h1 {
         font-size: 2rem;
     }
-    
-    .tagline p {
-        font-size: 1rem;
-    }
-    
     .logo-icon {
         font-size: 3rem;
     }
@@ -136,11 +135,17 @@ h1 {
     .container {
         padding: 1rem;
     }
-    
+
+    .logo-text {
+        font-size: 2.5rem;
+    }
+
+    .tagline p {
+        font-size: 1rem;
+    }
     h1 {
         font-size: 1.5rem;
     }
-    
     .social-link {
         font-size: 1.2rem;
         margin: 0 0.5rem;
