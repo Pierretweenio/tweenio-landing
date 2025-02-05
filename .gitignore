@@ -39,4 +39,4 @@ replit.nix
 # Keep only docs directory for GitHub Pages
 /*
 !/docs/
-!README.md
+!README.mddocs/
