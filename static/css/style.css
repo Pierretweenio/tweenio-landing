@@ -17,11 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background: var(--primary-color); /* Ensure the background color is applied */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -119,12 +116,6 @@ body {
 }
 
 /* Animations */
-@keyframes progress {
-    0% { width: 0%; }
-    50% { width: 100%; }
-    100% { width: 0%; }
-}
-
 .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
