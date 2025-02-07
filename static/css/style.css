@@ -21,6 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background: var(--primary-color); /* Ensure the background color is applied */
 }
 
 .container {
@@ -48,9 +49,9 @@ body {
 
 .logo-text {
     font-family: 'Quicksand', sans-serif;
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
-    font-weight: 700;
-    color: var(--text-color);
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: var(--text-color); /* Ensure the color is set */
     letter-spacing: 2px;
     line-height: 1.2;
 }
@@ -93,6 +94,12 @@ body {
     height: 100%;
     background-color: var(--text-color);
     animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    50% { width: 100%; }
+    100% { width: 0%; }
 }
 
 /* Social Links */
